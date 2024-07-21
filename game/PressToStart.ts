@@ -52,17 +52,7 @@ export default class PressToStart {
 
     this.ctx.save()
     this.ctx.globalAlpha = this.opacity
-    this.ctx.drawImage(
-      Runner.imageSprite,
-      textSourceX,
-      textSourceY,
-      textSourceWidth,
-      textSourceHeight,
-      textTargetX,
-      textTargetY,
-      textTargetWidth,
-      textTargetHeight
-    )
+    
     this.ctx.restore()
     this.ctx.globalAlpha = 1
   }
