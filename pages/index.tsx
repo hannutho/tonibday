@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Runner from "@/game/Runner";
 
-const assetPrefix = process.env.NODE_ENV === "production" ? "/chrome-dino" : "";
+const assetPrefix = process.env.NODE_ENV === "production" ? "" : "";
 
 export default function Home() {
   useEffect(() => {
@@ -25,26 +25,8 @@ export default function Home() {
       <div id="main-frame-error" className="interstitial-wrapper">
         <div id="main-message">
           <h1>
-            <span>Press space to play</span>
+            <span>Alles Gute!</span>
           </h1>
-          <ul>
-            <li>
-              <span>
-                Press <kbd>Space</kbd> / <kbd>↑</kbd> to jump. Release quickly
-                for a small jump.
-              </span>
-            </li>
-            <li>
-              <span>
-                Press <kbd>↓</kbd> while jumping for a faster drop.
-              </span>
-            </li>
-            <li>
-              <span>
-                Press <kbd>↓</kbd> to duck.
-              </span>
-            </li>
-          </ul>
         </div>
         <div className="runner-container">
           <canvas className="runner-canvas"></canvas>
